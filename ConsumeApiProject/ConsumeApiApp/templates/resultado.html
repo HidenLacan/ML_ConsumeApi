@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1  class="text-green text-xl font-semibold"> Resultado de la prediccion:</h1>
+{% if resultado.maduro == 1 %}
+    <h1 class="text-green text-xl font-semibold"> El Aguacate esta maduro disfrutalo</h1>
+{% else %}
+    <h1 class="text-red text-xl font-semibold" > El aguacate no esta maduro Nimodo</h1>
+{% endif %}
+{% endblock  %}
